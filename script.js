@@ -1,10 +1,13 @@
+const Nav = ()=>{
+    return React.createElement("nav", null, "Hola");
+};
 const App = ()=>{
     const [nombre, setNombre] = React.useState("Maxi");
     const style = {
         background: "#000",
         width: "100%"
     };
-    return React.createElement(React.Fragment, null, React.createElement("p", null, nombre), React.createElement("div", {
+    return React.createElement(React.Fragment, null, React.createElement(Nav, null), React.createElement("p", null, nombre), React.createElement("div", {
         style: style
     }, React.createElement("button", {
         "data-id": "btn1"
